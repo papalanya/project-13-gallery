@@ -134,11 +134,11 @@ img {
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 3px;
-  transform: scale(1);
   transition: 0.3s ease-in-out;
 }
 .gallery__item:hover {
-  transform: scale(1.1);
+  border-radius: 50%;
+  transform: rotate(20deg);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .gallery__item {
@@ -154,19 +154,10 @@ img {
     margin-bottom: 8px;
   }
 }
-.gallery__item--small {
-  margin-bottom: 0;
-}
-.gallery__item--small:hover {
-  transform: translateY(-15%);
-}
 
 .gallery__item--big {
   max-width: 90px;
   max-height: 90px;
-}
-.gallery__item--big:hover {
-  transform: translateY(3%);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .gallery__item--big {
